@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script defer src="script.js"></script>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="form-wrapper">
+        <h1 id="form-heading">Sign-up</h1>
+        <form id="myForm" name="myForm" action="/" method="GET">
+          
+          <div class="input-wrapper">
+            <label for="username" class="form-label">Username</label>
+            
+            <div class="input-inner-wrapper">
+              <input id="username" placeholder="johnDoe" class="input" type="text" name="name">
+              <i class="fa-solid fa-circle-xmark icon i-error"></i>
+              <i class="fa-solid fa-circle-check icon i-success"></i>
+              <p class="error-message">Error message</p>
+            </div>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="email" class="form-label">Email</label>
+            
+            <div class="input-inner-wrapper">
+              <input id="email" placeholder="johndoe@mail.com" class="input" type="email" name="email">
+              <i class="fa-solid fa-circle-xmark icon i-error"></i>
+              <i class="fa-solid fa-circle-check icon i-success"></i>
+              <p class="error-message">Error message</p>
+            </div>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="password" class="form-label">Password</label>
+            
+            <div class="input-inner-wrapper">
+              <input id="password1" class="input" type="password" name="password">
+              <i class="fa-solid fa-circle-xmark icon i-error"></i>
+              <i class="fa-solid fa-circle-check icon i-success"></i>
+              <p class="error-message">Error message</p>
+            </div>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="password2" class="form-label">Confirm Password</label>
+            
+            <div class="input-inner-wrapper">
+              <input id="password2" class="input" type="password" name="password">
+              <i class="fa-solid fa-circle-xmark icon i-error"></i>
+              <i class="fa-solid fa-circle-check icon i-success"></i>
+              <p class="error-message">Error message</p>
+            </div>
+          </div>
+          
+          <button id="submit" type="submit">Register</button>
+        </form>
+      </div>
+
+</body>
+</html>
